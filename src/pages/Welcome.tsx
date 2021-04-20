@@ -12,7 +12,7 @@ import colors from '../styles/colors';
 import { Button } from '../components/Buttom';
 
 export function Welcome(){
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   function handleVisibility(){
     setVisible(!visible);
@@ -36,7 +36,7 @@ export function Welcome(){
         Nós Cuidamos de lembrar você sempre que precisar.
       </Text>
 
-      < Button title=">"/>
+      < Button title=">" onPress={handleVisibility}/>
 
     </SafeAreaView>
   );
