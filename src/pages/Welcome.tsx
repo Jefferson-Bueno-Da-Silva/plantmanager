@@ -19,6 +19,7 @@ export function Welcome(){
   return(
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper} >
+        
         <Text style={ styles.title }>
           Gerencie {'\n'}
           suas plantas de {'\n'}
@@ -39,7 +40,8 @@ export function Welcome(){
         <TouchableOpacity 
           style={ styles.button }
           activeOpacity={0.7}
-        >        
+        >
+
           <Feather
             name="chevron-right"
             style={styles.buttonIcon}
